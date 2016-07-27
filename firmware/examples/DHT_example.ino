@@ -14,13 +14,14 @@
  *      January 2014        Original Spark Port
  *      October 2014        Added support for DHT21/22 sensors
  *                          Improved timing, moved FP math out of ISR
+ *EDITED: for particle electron use
  */
 
 #include "PietteTech_DHT/PietteTech_DHT.h"
 
 // system defines
 #define DHTTYPE  DHT22              // Sensor type DHT11/21/22/AM2301/AM2302
-#define DHTPIN   3         	    // Digital pin for communications
+#define DHTPIN   D2         	    // Digital pin for communications
 #define DHT_SAMPLE_INTERVAL   2000  // Sample every two seconds
 
 //declaration
